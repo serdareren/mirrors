@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Mirrors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <style>
+      #fllscrn{position: absolute; top:0px; right:0px; width: 80px;height: 80px;background:url(IMG/icons.4ai-17a.png); z-index: 100; cursor:nwse-resize;} 
+      #fllscrn:hover{transform:scale(1.02);}             
+    </style>
+    <script>
+      function fullScreen() {
+        parent.toggleFullScreen();
+      }
+    </script>
+
+    <div id="fllscrn" onClick="fullScreen();"></div>
+
+    <div id="main" >
+    <img src="IMG/aynalar lense-26.png" width="382" height="133" class="center">
+      <img class="background" src="IMG/lense-02.png" width="981" height="561" >
+      <div id="container">
+        <canvas id="myCanvas" width="960" height="540" ></canvas>
+        <img id="coordinat" src="IMG/lense-03.png" width="960" height="540" style="opacity: 0.5;position: absolute;margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; top: 0; left:0; bottom: 0; right: 0;">
+        <div id="image_arrow" class="arrow" ></div>
+        <div id="lens" ></div>
+        <div id="real_arrow" class="arrow" ></div>
+        <div id="fraction_bar" class="f_bar" >
+          <div id="fraction_left" class="variables">f</div>
+        </div>
+        <div id="fraction_bar_Right" class="f_bar" >
+          <div id="fraction_right" class="variables">f</div>
+        </div>
+        <div id="arrowHeight" class="arrowheight">
+          <div id="arrowh" class="variables">h</div>
+        </div>
+        <div id="arrowDistance" class="f_bar">
+          <div id="arrowD" class="variables">O</div>
+        </div>
+        <div id="image_arrowDistance" class="f_bar">
+          <div id="imageD" class="variables">i</div>
+        </div>
+      </div>
+
+      <div id="menu">
+        <img id="incekenarli" class="buttons" src="IMG/lense-14.png" width="299" height="53">
+        <img id="kalinkenarli" class="buttons" src="IMG/lense-13.png" width="299" height="53" style ="margin-top: 42px;">
+        <img id="cukurayna" class="buttons" src="IMG/lense-15.png" width="299" height="53" style ="margin-top: 42px;">
+        <img id="tumsekayna" class="buttons" src="IMG/lense-16.png" width="299" height="53" style ="margin-top: 42px;">
+      </div>
+      
+      <div class="solutions">
+        <span class="frac" >h   :</span><input type='text' class='input' name="h" style='margin-left: 7px;'><br>
+        <span class="frac" >f   :</span><input type='text' class='input' name="f"style='margin-left: 15px;'><br>
+        <span class="frac" >O  :</span><input type='text' class='input' name="O"style='margin-left: 4px;'><br>
+        <span class="frac" >i   :</span><input type='text'class='input' name="i"style='margin-left: 17px;'><br>
+        <span class="frac" >h' :</span><input type='text'class='input' name="h'">
+        
+        
+      </div>
+      
+      <div id="slider" class="slider" style="left: 420px;">
+        <span id="arrowX">CİSMİN MERCEĞE UZAKLIĞI</span>
+        <img id='arrowx_slider' width="52" height="52" src="IMG/lense-22.png" style='position: absolute;'>
+      </div>
+      <div id="slider2" class="slider" style="right: 420px;" >
+        <span id="fractionX">ODAK UZAKLIĞI</span>
+        <img id='fractionX_slider' width="52" height="52"  src="IMG/lense-22.png" style='position: absolute;'>
+      </div>
+      
+    </div>
+
+    <script src="JS/Tweenmax/TweenMax.min.js"></script>
+    <script src="JS/Tweenmax/TweenLite.min.js"></script>
+    <script src="JS/jquery-3.1.0.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

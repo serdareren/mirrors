@@ -1,0 +1,185 @@
+@font-face 
+{
+  font-family: 'sab';
+  src: url('../FONT/tt0132m_.ttf');
+  src: local('Sab'), local('sab'), url('../FONT/tt0132m_.ttf') format('truetype');
+}
+@font-face 
+{
+  font-family: 'sab1';
+  src: url('../FONT/tt0375m_.ttf');
+  src: local('Sab'), local('sab'), url('../FONT/tt0375m_.ttf') format('truetype');
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../IMG/lense-01.png);
+}
+
+#container {
+  position: absolute;
+  overflow: hidden;
+
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: white;
+  border-radius: 18px;
+}
+
+.background {
+  position: absolute;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 1025px;
+  height: 602px;
+}
+
+.center {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
+
+#myCanvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.arrow {
+  width: 57px;
+  height: 86px;
+  position: absolute;
+  margin-left: -29px;
+  background-image: url(../IMG/lense-23.png);
+  transform-origin: center bottom;
+}
+
+#lens {
+  position: absolute;
+  opacity: 0.6;
+  width: 110px;
+  height: 279px;
+  margin-left: -55px;
+  margin-top: -139px;
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  height: 338px;
+  left: 90px;
+  top: 242px;
+}
+
+.solutions {
+  width:245px;
+  height:295px;
+  left: 120px;
+  top: 689px;
+  position: absolute;
+  background-image: url(../IMG/lense-04.png);
+}
+
+.buttons {
+  opacity: 1;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.buttons.active {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.variables {
+  width: 10px;
+  height: 20px;
+  font-size: 21px;
+  position: absolute;
+}
+
+.f_bar {
+  position: absolute;
+  border-bottom:1px solid;
+  border-left:1px solid;
+  border-right:1px solid;
+}
+
+.arrowheight {
+  position: absolute;
+  border-bottom:1px solid;
+  border-left:1px solid;
+  border-top:1px solid;
+}
+
+.slider {
+  width : 542px;
+  height: 112px;
+
+  background-image: url(../IMG/aynalarlense-25.png);
+  position: absolute;
+  bottom: 0;
+}
+
+#arrowX {
+  font-family: "sab1";
+  font-size: 28px;
+  position: absolute;
+  top: -43px;
+  left: 117px;
+}
+
+#fractionX {
+  font-family: "sab1";
+  font-size: 28px;
+  position: absolute;
+  top: -43px;
+  left: 183px;
+}
+
+.frac {
+  font-family: "sab1";
+  font-size: 47px;
+  padding: 0 25px;
+}
+
+.input {
+  position: absolute;
+  margin: 21px 0px;
+  width: 50px;
+  height: 26px;
+}
+
+input[type=text] {
+  text-align: center;
+  font-family: 'sab';
+  font-size: 32px;
+  background-color: #FCBB59;
+  color: black;
+  border: none;
+  border-bottom: 2px solid red;
+}
